@@ -28,6 +28,10 @@ join  language as lang on f.language_id = lang.language_id;
 -- seeing the result with 1000 rows, but only English as language, therefore I checked for distinct language_id column in table film to make sure the join is correct
 select distinct language_id
 from film;
+-- Note: after submitting the solution, I realized that this is for basic query, therefore the question is more simple than I thought previously which is checking which languages used in films available in this database.
+-- here is the simple show of the list of languages used in films from language table:
+select name as language
+from language; 
 
 -- 3.3 List of first names of all employees from the staff table
 select first_name
